@@ -6,7 +6,43 @@
     <title>Weatey AI Agency</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<bo/* Portfolio Card Styling */
+.portfolio-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Button Styling with Hover Effects */
+button, .btn-style {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+button:hover, .btn-style:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+button:active, .btn-style:active {
+    transform: translateY(1px);
+}
+dy>
 
 <header class="navbar">
     <div class="logo">🤖 Weatey AI Agency</div>
@@ -104,6 +140,41 @@
       placeholder="Ask me anything..."
       style="width:100%;padding:10px;margin-bottom:10px;"
     >
+<!-- Portfolio Section -->
+<section id="portfolio" style="padding: 40px 20px; max-width: 1000px; margin: 0 auto;">
+    <h2 style="text-align: center; color: #1e293b; margin-bottom: 30px; font-size: 2rem;">My Portfolio</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio-card">
+            <div style="background: #e2e8f0; height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #64748b; font-weight: bold;">
+                Photography Showcase
+            </div>
+            <h3 style="margin: 15px 0 5px; color: #1e293b;">Visual Portfolio</h3>
+            <p style="color: #64748b; font-size: 0.9rem;">Professional imagery, editorial concepts, and digital visual styling.</p>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="portfolio-card">
+            <div style="background: #e2e8f0; height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #64748b; font-weight: bold;">
+                AI Chatbot Assistant
+            </div>
+            <h3 style="margin: 15px 0 5px; color: #1e293b;">Custom Agency Bot</h3>
+            <p style="color: #64748b; font-size: 0.9rem;">Automated customer engagement and instant lead capture system.</p>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="portfolio-card">
+            <div style="background: #e2e8f0; height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #64748b; font-weight: bold;">
+                Web Applications
+            </div>
+            <h3 style="margin: 15px 0 5px; color: #1e293b;">Smart Management Apps</h3>
+            <p style="color: #64748b; font-size: 0.9rem;">Functional client utilities designed for clean user experiences.</p>
+        </div>
+
+    </div>
+</section>
 
     <button id="sendBtn" class="primary-btn" style="width:100%;">
       Send
